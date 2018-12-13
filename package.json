@@ -1,7 +1,7 @@
 {
   "name": "@use-hooks/image-size",
   "version": "1.0.0",
-  "description": "Custom React Hooks for image natural size",
+  "description": "Custom React Hooks for image natural size.",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -11,6 +11,7 @@
     "start": "webpack-dev-server --progress --color",
     "build": "webpack --env build",
     "example": "webpack --env example",
+    "readme": "use-hooks-readme",
     "lint": "eslint src example",
     "lint:fix": "eslint src example --fix",
     "prepublishOnly": "npm run build"
@@ -45,6 +46,7 @@
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
     "regenerator-runtime": "^0.13.1",
+    "use-hooks-readme": "^1.0.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
@@ -58,6 +60,10 @@
     "*.{js,jsx}": [
       "eslint --fix",
       "git add"
+    ],
+    "*.{js,jsx,json}": [
+      "use-hooks-readme",
+      "git add README.md"
     ]
   },
   "dependencies": {

@@ -48,24 +48,29 @@ yarn add @use-hooks/image-size
 
 ```js
 import React from 'react';
+
 import useImageSize from '@use-hooks/image-size';
 
 export default function App() {
   const url = 'https://cdn.int64ago.org/ogk39i54.png';
-
   const [width, height] = useImageSize(url);
 
   return (
     <div>
-      Natural size: {width} x {height}
+      <h2>DEMO of <span style={{ color: '#F44336' }}>@use-hooks/image-size</span></h2>
+      <div>
+        <img src={url} width={100} height={100} alt="" />
+        <div>Natural size: {width} x {height}</div>
+      </div>
     </div>
   );
 }
+
 ```
 
-See `./example` for a full [example](https://use-hooks.github.io/react-hooks-image-size/).
+[Live Show](https://use-hooks.github.io/react-hooks-image-size/)
 
-## Have a try
+## Development
 
 > Node >= v8 LTS
 
