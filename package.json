@@ -1,6 +1,6 @@
 {
   "name": "@use-hooks/image-size",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom React Hooks for image natural size.",
   "main": "dist/index.js",
   "files": [
