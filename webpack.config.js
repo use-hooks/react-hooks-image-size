@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = function(env) {
+module.exports = (env) => {
   const isExample = env === 'example';
   const isBuild = env === 'build';
   const isDev = !env;
@@ -52,5 +52,5 @@ module.exports = function(env) {
       isDev && new webpack.NamedModulesPlugin(),
       isDev && new webpack.HotModuleReplacementPlugin(),
     ].filter(Boolean),
-  }
+  };
 };
