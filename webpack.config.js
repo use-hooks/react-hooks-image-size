@@ -9,7 +9,7 @@ module.exports = (env) => {
 
   return {
     mode: isBuild ? 'production' : 'development',
-    entry: isBuild ? './src' : './example/index.js',
+    entry: isBuild ? './src' : './example',
 
     output: {
       path: path.join(__dirname, isExample ? '__site__' : 'dist'),
@@ -35,10 +35,14 @@ module.exports = (env) => {
       },
     } : {},
 
+    resolve: {
+      extensions: ['.js', '.jsx', '.json'],
+    },
+
     module: {
       rules: [
         {
-          test: /\.js?$/,
+          test: /\.jsx?$/,
           exclude: /node_modules/,
           use: ['babel-loader'],
         },
