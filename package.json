@@ -12,8 +12,8 @@
     "build": "webpack --env build",
     "example": "webpack --env example",
     "readme": "use-hooks-readme",
-    "lint": "eslint src example",
-    "lint:fix": "eslint src example --fix",
+    "lint": "eslint src example --ext .js*",
+    "lint:fix": "eslint src example --ext .js* --fix",
     "prepublishOnly": "npm run build"
   },
   "repository": {
