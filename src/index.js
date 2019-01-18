@@ -22,10 +22,6 @@ export default (url) => {
       setSize([naturalWidth, naturalHeight]);
     });
     img.src = url;
-    document.body.appendChild(img);
-    return () => {
-      img.parentNode.removeChild(img);
-    };
   }, [url]);
 
   return size;
