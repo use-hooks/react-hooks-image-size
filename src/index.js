@@ -16,7 +16,6 @@ export default (url) => {
   useEffect(() => {
     if (!url) return;
     const img = document.createElement('img');
-    img.style.display = 'none';
     img.addEventListener('load', (e) => {
       const { naturalHeight, naturalWidth } = e.target;
       setSize([naturalWidth, naturalHeight]);
