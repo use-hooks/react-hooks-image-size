@@ -1,6 +1,6 @@
 {
   "name": "@use-hooks/image-size",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom React Hooks for image natural size.",
   "main": "dist/index.js",
   "files": [
@@ -71,7 +71,7 @@
     "react-dom": "^16.8.1"
   },
   "peerDependencies": {
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   }
 }
