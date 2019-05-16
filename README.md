@@ -86,5 +86,5 @@ MIT
  [npm-url]: https://npmjs.org/package/@use-hooks/image-size
  [download-image]: https://img.shields.io/npm/dm/@use-hooks/image-size.svg?style=flat-square
  [download-url]: https://npmjs.org/package/@use-hooks/image-size
- [travis-url]: https://travis-ci.org/use-hooks/react-hooks-image-size
- [travis-image]: https://img.shields.io/travis/use-hooks/react-hooks-image-size.svg?style=flat-square
+ [travis-url]: https://travis-ci.com/use-hooks/react-hooks-image-size
+ [travis-image]: https://img.shields.io/com/travis/use-hooks/react-hooks-image-size.svg?style=flat-square
